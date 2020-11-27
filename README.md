@@ -114,6 +114,69 @@ for ship in captains:
 # Voyager: Janeway
 ```
 
+#### Functions
+
+```python
+# Example syntax
+def FunctionName(param1, param2, ... , paramn):
+	return param1 + param2 + ... + paramn
+
+# Return the square of a given number
+def SquareIt(x):
+    return x * x
+
+# Pass function in as a parameter
+def DoSomething(f, x):
+    return f(x)
+
+print(SquareIt(2)) # 4
+print(DoSomething(SquareIt, 3))
+
+# Inline simple function using Lambda function
+print(DoSomething(lambda x: x * x * x, 3)) # 27
+```
+
+#### Boolean Expressions
+
+```python
+print(1 == 3) 			# False
+print(True or False)	# True
+print(1 is 3)			# False
+
+if 1 is 3:
+ print("How did that happen?")
+elif 1 > 3:
+ print("Yikes")
+else:
+ print("All is well with the world")
+
+# All is well with the world
+```
+
+#### Looping
+
+```python
+for x in range(10):
+    print(x)
+
+for x in range(10):
+    if (x is 1):
+        continue
+    if (x > 5):
+        break
+    print(x)
+
+x = 0
+while (x < 10):
+    print(x)
+    x += 1
+
+myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for x in myList:
+    if (x % 2 == 0):
+        print(x)
+```
+
 
 ### Types of Data
 
